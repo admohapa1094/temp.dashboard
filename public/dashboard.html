@@ -12,6 +12,20 @@
         background-color: rgb(200,200,255);
         border: 2px solid rgb(50, 50, 100);
       }
+      section {
+        background-color: white;
+      }
+      section h2 {
+        color: #999;
+        font-size: 12pt;
+        text-transform: uppercase;
+      }
+      #target-date {
+        border: 3px solid rgb(94,3,5);
+      }
+      .data-big, .label {
+        font-size: 20pt;
+      }
     </style>
     <title>Project Dashboard</title>
   </head>
@@ -23,9 +37,16 @@
         <div class="col placeholder">
           Completion %
         </div>
-        <div class="col placeholder">
-          Due date | days remaining
+        <section id="target-date" class="col placeholder">
+          <h2>Target Date</h2>
+          <div>
+            <span class="label">Days:</span>
+            <span class="data-big time-med">17</span>
         </div>
+        <div>
+          <span class="data-big">d/m/yy</span>
+        </div>
+        </section>
         <div class="col placeholder">
           Status
         </div>
@@ -64,7 +85,7 @@
                 Create a dashboard
               </td>
               <td>
-                L
+                Large
               </td>
               <td>
                 Dancing Foxes
@@ -75,7 +96,7 @@
                 Build charts
               </td>
               <td>
-                M
+                Medium
               </td>
               <td>
                 Walled Terrapins
