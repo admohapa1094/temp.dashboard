@@ -8,6 +8,22 @@ class Work
   public $start_date;
   public $stop_date;
   public $hours;
+  public $completion_estimate;
+
+  public function __construct($row){
+$this->id = intval($row['id']);
+
+$this->task_id = intval($row['task_id']);
+$this->team_id = intval($row['team_id']);
+
+$this->start = $row['start_date'];
+$this->hours = floatval($row['hours']);
+
+// calculate stop date
+
+
+
+  }
 
   public function_construct($data) {
 
